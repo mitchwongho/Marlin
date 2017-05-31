@@ -496,7 +496,8 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.616, 161.616, 4000, 468.1648 }  //admustment for new idler bearings
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.616, 161.616, 4000, 468.1648 }  //admustment for new idler bearings
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.616, 161.616, 4000, 99.61 }  //admustment for new idler bearings
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 4000, 484.8 }
 
 /**
