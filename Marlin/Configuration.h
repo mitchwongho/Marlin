@@ -1,5 +1,7 @@
 #include <U8glib.h>
 
+#include <U8glib.h>
+
 /**
  * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -319,9 +321,9 @@
 //  #define  DEFAULT_Kp 22.2
 //  #define  DEFAULT_Ki 1.08
 //  #define  DEFAULT_Kd 114
-#define  DEFAULT_Kp 14.34
-#define  DEFAULT_Ki 0.81
-#define  DEFAULT_Kd 63.80
+#define  DEFAULT_Kp 16.36
+#define  DEFAULT_Ki 0.91
+#define  DEFAULT_Kd 73.15
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -374,9 +376,10 @@
   //#define  DEFAULT_bedKd 1675.16
 
   //Auto-tune
-#define  DEFAULT_bedKp 81.01
-#define  DEFAULT_bedKi 2.88
-#define  DEFAULT_bedKd 569.43
+
+#define  DEFAULT_bedKp 158.69
+#define  DEFAULT_bedKi 31.04
+#define  DEFAULT_bedKd 202.80
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -497,7 +500,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.616, 161.616, 4000, 468.1648 }  //admustment for new idler bearings
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.616, 161.616, 4000, 99.61 }  //admustment for new idler bearings
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.616, 161.616, 4000, 94.8666 }  //admustment for new idler bearings
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 4000, 484.8 }
 
 /**
@@ -734,8 +737,8 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 190
-#define Y_MAX_POS 160
+#define X_MAX_POS 175
+#define Y_MAX_POS 175
 #define Z_MAX_POS 190
 
 //===========================================================================
